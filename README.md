@@ -143,9 +143,3 @@ MCAst does not use any external dependencies, but some are needed for testing.
   - coverage is used for generating test coverage, install it with
     `pip install coverage`
   - `make coverage` for generating the test coverage (requires `pytest`)
-
-- `tox`
-  - tox is used for testing multiple python versions at once, install it with
-    `pip install tox`
-  - you must install python3.7, python3.8 and python3.9 too
-  - `make test-all` for testing the program on py37, py38 and py39
