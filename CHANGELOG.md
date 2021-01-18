@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Rename from `mcast` to `mcfunction(.py)`
+- Double precision is now 14 places  (was the default 6 before)
 
 ## 0.1.0
 
