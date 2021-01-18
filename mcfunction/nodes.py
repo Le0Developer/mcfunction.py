@@ -182,7 +182,7 @@ class DoubleNode(ValueNode):
     value: float
 
     def __str__(self):
-        return clean(f'{self.value:f}')
+        return clean(f'{self.value:.14f}')
 
 
 class IntegerNode(ValueNode):
