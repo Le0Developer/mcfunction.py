@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Added
+
+- McFunction file parser and reconstructer (#1)
+
 ## 0.1.0
 
 ### Added
