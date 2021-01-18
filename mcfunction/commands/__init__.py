@@ -1,10 +1,10 @@
 from __future__ import annotations
 
-import abc
 import importlib
 from pathlib import Path
 import typing as t
 
+from ..abc import ParsedCommand
 from ..exceptions import ParserException
 from ..parser_types import ParserType
 from ..util import tokenize
@@ -18,7 +18,8 @@ class Command:
     variations: t.List[t.Tuple[Parser, ...]]
 
     def __init__(self, name: str, aliases: t.List[str] = None, *,
-                 parsed: t.Any, commandblock: bool = True):
+                 parsed: t.Callable[..., ParsedCommand],
+                 commandblock: bool = True):
         self.name = name
         if aliases is None:
             aliases = []
@@ -74,14 +75,6 @@ class Command:
 class Parser(t.NamedTuple):
     parser: ParserType
     destination: t.Union[None, str]
-
-
-class ParsedCommand(metaclass=abc.ABCMeta):
-    command: str
-
-    @abc.abstractmethod
-    def __str__(self) -> str:
-        raise NotImplementedError
 
 
 def _main():  # pragma: no cover
