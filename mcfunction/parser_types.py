@@ -275,7 +275,7 @@ class Rotation(ParserType):
 
 
 class ScoreboardEntity(Entity):
-    valid_usernames = re.compile(r'(\*|[a-zA-Z0-9_-]{1,16})')
+    valid_usernames = re.compile(r'.+')
 
 
 class Union(ParserType):
