@@ -9,8 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- UUIDs are now case insensitive
-- JSON no longers escapes non-ascii characters
+- UUIDs are now case insensitive  (#12)
+- JSON no longers escapes non-ascii characters  (#14)
 
 ## [0.2.0]
 
@@ -21,9 +21,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Rename from `mcast` to `mcfunction(.py)`
-- Double precision is now 14 places  (was the default 6 before)
-- Entity parser now accepts UUIDs as selectors
-- ScoreboardEntity now accepts almost everything
+- Double precision is now 14 places  (was the default 6 before)  (#5)
+- Entity parser now accepts UUIDs as selectors  (#9)
+- ScoreboardEntity now accepts almost everything  (#10)
+
+### Fixed
+
+- Wrong parsing of `data modify <target> set value X`, parsing X as Double instead of Any  (#4)
 
 ## [0.1.0]
 
