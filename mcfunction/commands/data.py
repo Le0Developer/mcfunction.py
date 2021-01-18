@@ -28,7 +28,7 @@ class ParsedDataCommand(ParsedCommand):
     modification_source: RawNode = None
     path: RawNode = None
     index: IntegerNode = None
-    source_path: t.Union[DoubleNode, RawNode] = None
+    source_path: RawNode = None
     source_type: RawNode = None
     source: t.Union[PositionNode, EntityNode, NamespaceIDNode] = None
     nbt: RawNode = None
@@ -163,7 +163,7 @@ for name, parser in SOURCES:
             Parser(Any(), 'path'),
             Parser(Literal(modification), 'modification'),
             Parser(Literal('value'), 'modification_source'),
-            Parser(Double(), 'source_path'),
+            Parser(Any(), 'source_path'),
         )
 
     for source_name, source_parser in SOURCES:
@@ -201,7 +201,7 @@ for name, parser in SOURCES:
         Parser(Literal('insert'), 'modification'),
         Parser(Integer(), 'index'),
         Parser(Literal('value'), 'modification_source'),
-        Parser(Double(), 'source_path'),
+        Parser(Any(), 'source_path'),
     )
 
     # data remove <TARGET> <path>

@@ -87,7 +87,7 @@ def test_data_modify_append_value():
     parsed: ParsedDataCommand
 
     assert parsed.modification_source.value == 'value'
-    assert parsed.source_path.value == 1337
+    assert parsed.source_path.value == '1337'
 
     assert str(parsed) == 'data modify block 0 0 0 a.b.c append value 1337'
 
@@ -99,7 +99,7 @@ def test_data_modify_insert():
     assert parsed.modification.value == 'insert'
     assert parsed.index.value == 0
     assert parsed.modification_source.value == 'value'
-    assert parsed.source_path.value == 1337
+    assert parsed.source_path.value == '1337'
 
     assert str(parsed) == 'data modify block 0 0 0 a.b.c insert 0 value 1337'
 
