@@ -1,6 +1,6 @@
 
-from mcast.commands.effect import effect, ParsedEffectCommand
-from mcast.nodes import EntityNode
+from mcfunction.commands.effect import effect, ParsedEffectCommand
+from mcfunction.nodes import EntityNode
 
 
 def test_effect_clear():

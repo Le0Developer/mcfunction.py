@@ -1,6 +1,6 @@
 
-from mcast.commands.teleport import teleport, ParsedTeleportCommand
-from mcast.nodes import EntityNode, PositionNode, RotationNode
+from mcfunction.commands.teleport import teleport, ParsedTeleportCommand
+from mcfunction.nodes import EntityNode, PositionNode, RotationNode
 
 
 def test_teleport_destination():

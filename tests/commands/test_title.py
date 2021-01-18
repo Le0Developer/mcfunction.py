@@ -1,6 +1,6 @@
 
-from mcast.commands.title import title, ParsedTitleCommand
-from mcast.nodes import EntityNode
+from mcfunction.commands.title import title, ParsedTitleCommand
+from mcfunction.nodes import EntityNode
 
 
 def test_title_clear():

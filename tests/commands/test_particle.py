@@ -1,6 +1,6 @@
 
-from mcast.commands.particle import particle, ParsedParticleCommand
-from mcast.nodes import EntityNode, PositionNode
+from mcfunction.commands.particle import particle, ParsedParticleCommand
+from mcfunction.nodes import EntityNode, PositionNode
 
 
 def test_particle():

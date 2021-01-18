@@ -1,6 +1,6 @@
 
-from mcast.commands.fill import fill, ParsedFillCommand
-from mcast.nodes import PositionNode
+from mcfunction.commands.fill import fill, ParsedFillCommand
+from mcfunction.nodes import PositionNode
 
 
 def test_fill():

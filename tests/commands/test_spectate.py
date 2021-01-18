@@ -1,6 +1,6 @@
 
-from mcast.commands.spectate import spectate, ParsedSpectateCommand
-from mcast.nodes import EntityNode
+from mcfunction.commands.spectate import spectate, ParsedSpectateCommand
+from mcfunction.nodes import EntityNode
 
 
 def test_specate():

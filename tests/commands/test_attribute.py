@@ -1,6 +1,6 @@
 
-from mcast.commands.attribute import attribute, ParsedAttributeCommand
-from mcast.nodes import EntityNode
+from mcfunction.commands.attribute import attribute, ParsedAttributeCommand
+from mcfunction.nodes import EntityNode
 
 
 def test_attribute_get():

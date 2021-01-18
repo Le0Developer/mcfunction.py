@@ -1,6 +1,6 @@
 
-from mcast.commands.replaceitem import replaceitem, ParsedReplaceitemCommand
-from mcast.nodes import EntityNode, PositionNode
+from mcfunction.commands.replaceitem import replaceitem, ParsedReplaceitemCommand
+from mcfunction.nodes import EntityNode, PositionNode
 
 
 def test_replaceitem_block():

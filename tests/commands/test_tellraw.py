@@ -1,6 +1,6 @@
 
-from mcast.commands.tellraw import tellraw, ParsedTellrawCommand
-from mcast.nodes import EntityNode
+from mcfunction.commands.tellraw import tellraw, ParsedTellrawCommand
+from mcfunction.nodes import EntityNode
 
 
 def test_tellraw():

@@ -1,5 +1,5 @@
 
-from mcast.commands.locate import locate, ParsedLocateCommand
+from mcfunction.commands.locate import locate, ParsedLocateCommand
 
 
 def test_locate():

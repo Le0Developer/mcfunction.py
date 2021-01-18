@@ -1,6 +1,6 @@
 
-from mcast.commands.tell import tell, ParsedTellCommand
-from mcast.nodes import EntityNode
+from mcfunction.commands.tell import tell, ParsedTellCommand
+from mcfunction.nodes import EntityNode
 
 
 def test_tell():

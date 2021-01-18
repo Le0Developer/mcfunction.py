@@ -1,6 +1,6 @@
 
-from mcast.commands.setblock import setblock, ParsedSetblockCommand
-from mcast.nodes import PositionNode
+from mcfunction.commands.setblock import setblock, ParsedSetblockCommand
+from mcfunction.nodes import PositionNode
 
 
 def test_setblock():

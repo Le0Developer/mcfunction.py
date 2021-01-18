@@ -1,8 +1,8 @@
 
-from mcast.commands.execute import (
+from mcfunction.commands.execute import (
     execute, ParsedExecuteCommand, ParsedExecuteCondition
 )
-from mcast.nodes import EntityNode, PositionNode, RotationNode
+from mcfunction.nodes import EntityNode, PositionNode, RotationNode
 
 
 class TestConditions:

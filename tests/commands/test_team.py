@@ -1,6 +1,6 @@
 
-from mcast.commands.team import team, ParsedTeamCommand
-from mcast.nodes import EntityNode
+from mcfunction.commands.team import team, ParsedTeamCommand
+from mcfunction.nodes import EntityNode
 
 
 def test_team_add():

@@ -1,6 +1,6 @@
 
-from mcast.commands.experience import experience, ParsedExperienceCommand
-from mcast.nodes import EntityNode
+from mcfunction.commands.experience import experience, ParsedExperienceCommand
+from mcfunction.nodes import EntityNode
 
 
 def test_experience_add():

@@ -1,5 +1,5 @@
 
-from mcast.commands.function import function, ParsedFunctionCommand
+from mcfunction.commands.function import function, ParsedFunctionCommand
 
 
 def test_function():

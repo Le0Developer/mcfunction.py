@@ -1,6 +1,6 @@
 
-from mcast.commands.worldborder import worldborder, ParsedWordborderCommand
-from mcast.nodes import Position2dNode
+from mcfunction.commands.worldborder import worldborder, ParsedWordborderCommand
+from mcfunction.nodes import Position2dNode
 
 
 def test_worldborder_add():

@@ -1,5 +1,5 @@
 
-from mcast.commands.save_all import save_all, ParsedSaveAllCommand
+from mcfunction.commands.save_all import save_all, ParsedSaveAllCommand
 
 
 def test_save_all():

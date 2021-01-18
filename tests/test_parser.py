@@ -1,8 +1,8 @@
 
 import pytest
 
-from mcast.exceptions import ParserException
-from mcast.parser import parse_command
+from mcfunction.exceptions import ParserException
+from mcfunction.parser import parse_command
 
 
 def test_parse_command():

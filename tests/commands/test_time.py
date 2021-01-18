@@ -1,5 +1,5 @@
 
-from mcast.commands.time import time, ParsedTimeCommand
+from mcfunction.commands.time import time, ParsedTimeCommand
 
 
 def test_time_add():

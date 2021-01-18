@@ -1,5 +1,5 @@
 
-from mcast.commands.reload import reload, ParsedReloadCommand
+from mcfunction.commands.reload import reload, ParsedReloadCommand
 
 
 def test_reload():

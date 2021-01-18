@@ -1,6 +1,6 @@
 
-from mcast.commands.ban import ban, ParsedBanCommand
-from mcast.nodes import EntityNode
+from mcfunction.commands.ban import ban, ParsedBanCommand
+from mcfunction.nodes import EntityNode
 
 
 def test_ban():

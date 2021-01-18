@@ -1,6 +1,6 @@
 
-from mcast.commands.tag import tag, ParsedTagCommand
-from mcast.nodes import EntityNode
+from mcfunction.commands.tag import tag, ParsedTagCommand
+from mcfunction.nodes import EntityNode
 
 
 def test_tag_add():

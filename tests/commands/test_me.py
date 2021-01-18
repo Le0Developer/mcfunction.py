@@ -1,5 +1,5 @@
 
-from mcast.commands.me import me, ParsedMeCommand
+from mcfunction.commands.me import me, ParsedMeCommand
 
 
 def test_me():

@@ -1,6 +1,6 @@
 
-from mcast.commands.data import data, ParsedDataCommand
-from mcast.nodes import EntityNode, PositionNode
+from mcfunction.commands.data import data, ParsedDataCommand
+from mcfunction.nodes import EntityNode, PositionNode
 
 
 def test_data_get_block():

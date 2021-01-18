@@ -1,5 +1,5 @@
 
-from mcast.commands.datapack import datapack, ParsedDatapackCommand
+from mcfunction.commands.datapack import datapack, ParsedDatapackCommand
 
 
 def test_datapack_enable():

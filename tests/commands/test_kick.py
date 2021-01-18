@@ -1,6 +1,6 @@
 
-from mcast.commands.kick import kick, ParsedKickCommand
-from mcast.nodes import EntityNode
+from mcfunction.commands.kick import kick, ParsedKickCommand
+from mcfunction.nodes import EntityNode
 
 
 def test_kick():

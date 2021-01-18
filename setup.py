@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 with open('README.md') as readme_file:
     readme = readme_file.read()
 
-with open('mcast/__version__.py', 'r') as f:
+with open('mcfunction/__version__.py', 'r') as f:
     ver_re = re.compile(
         r'''__version__\s*=\s*['"](([0-9]+\.?)+(a|b|rc)?)['"]'''
     )
@@ -28,14 +28,14 @@ setup(
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
     ],
-    description='Extraction library for manga websites.',
+    description='Minecraft command parser.',
     license='MIT license',
     long_description=readme,
-    keywords='mcast',
-    name='mcast',
-    packages=find_packages(include=['mcast', 'mcast.*']),
+    keywords='mcfunction parser',
+    name='mcfunction.py',
+    packages=find_packages(include=['mcfunction', 'mcfunction.*']),
     tests_require=['pytest>=6.2,<7'],
-    url='https://github.com/le0developer/mcast',
+    url='https://github.com/le0developer/mcfunction',
     version=version,
     zip_safe=False,
     extras_require={

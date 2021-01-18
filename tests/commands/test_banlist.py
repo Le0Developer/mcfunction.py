@@ -1,5 +1,5 @@
 
-from mcast.commands.banlist import banlist, ParsedBanlistCommand
+from mcfunction.commands.banlist import banlist, ParsedBanlistCommand
 
 
 def test_banlist():

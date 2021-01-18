@@ -1,5 +1,5 @@
 
-from mcast.commands.defaultgamemode import (
+from mcfunction.commands.defaultgamemode import (
     defaultgamemode, ParsedDefaultgamemodeCommand
 )
 

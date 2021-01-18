@@ -1,5 +1,5 @@
 
-from mcast.commands.gamerule import gamerule, ParsedGameruleCommand
+from mcfunction.commands.gamerule import gamerule, ParsedGameruleCommand
 
 
 def test_gamerule():

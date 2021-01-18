@@ -1,6 +1,6 @@
 
-from mcast.commands.enchant import enchant, ParsedEnchantCommand
-from mcast.nodes import EntityNode
+from mcfunction.commands.enchant import enchant, ParsedEnchantCommand
+from mcfunction.nodes import EntityNode
 
 
 def test_enchant():

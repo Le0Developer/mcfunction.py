@@ -1,5 +1,5 @@
 
-from mcast.commands.seed import seed, ParsedSeedCommand
+from mcfunction.commands.seed import seed, ParsedSeedCommand
 
 
 def test_seed():

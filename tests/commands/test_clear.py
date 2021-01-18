@@ -1,6 +1,6 @@
 
-from mcast.commands.clear import clear, ParsedClearCommand
-from mcast.nodes import EntityNode
+from mcfunction.commands.clear import clear, ParsedClearCommand
+from mcfunction.nodes import EntityNode
 
 
 def test_clear():

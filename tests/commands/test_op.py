@@ -1,6 +1,6 @@
 
-from mcast.commands.op import op, ParsedOpCommand
-from mcast.nodes import EntityNode
+from mcfunction.commands.op import op, ParsedOpCommand
+from mcfunction.nodes import EntityNode
 
 
 def test_op():

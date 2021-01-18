@@ -1,5 +1,5 @@
 
-from mcast import nodes
+from mcfunction import nodes
 
 
 class TestBlockNode:

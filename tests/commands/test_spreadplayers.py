@@ -1,8 +1,8 @@
 
-from mcast.commands.spreadplayers import (
+from mcfunction.commands.spreadplayers import (
     spreadplayers, ParsedSpreadplayersCommand
 )
-from mcast.nodes import EntityNode, Position2dNode
+from mcfunction.nodes import EntityNode, Position2dNode
 
 
 def test_spreadplayers():

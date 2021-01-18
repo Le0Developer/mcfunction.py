@@ -1,6 +1,6 @@
 
-from mcast.commands.ban_ip import ban_ip, ParsedIPBanCommand
-from mcast.nodes import EntityNode
+from mcfunction.commands.ban_ip import ban_ip, ParsedIPBanCommand
+from mcfunction.nodes import EntityNode
 
 
 def test_banip():

@@ -1,6 +1,6 @@
 
-from mcast.commands.spawnpoint import spawnpoint, ParsedSpawnpointCommand
-from mcast.nodes import EntityNode, PositionNode, RotationNode
+from mcfunction.commands.spawnpoint import spawnpoint, ParsedSpawnpointCommand
+from mcfunction.nodes import EntityNode, PositionNode, RotationNode
 
 
 def test_spawnpoint():

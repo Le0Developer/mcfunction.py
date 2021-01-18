@@ -1,6 +1,6 @@
 
-from mcast.commands.loot import loot, ParsedLootCommand
-from mcast.nodes import EntityNode, PositionNode
+from mcfunction.commands.loot import loot, ParsedLootCommand
+from mcfunction.nodes import EntityNode, PositionNode
 
 
 def test_loot_spawn():

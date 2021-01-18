@@ -1,6 +1,6 @@
 
-from mcast.commands.whitelist import whitelist, ParsedWhitelistCommand
-from mcast.nodes import EntityNode
+from mcfunction.commands.whitelist import whitelist, ParsedWhitelistCommand
+from mcfunction.nodes import EntityNode
 
 
 def test_whitelist_add():

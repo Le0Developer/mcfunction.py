@@ -1,6 +1,6 @@
 
-from mcast.commands.kill import kill, ParsedKillCommand
-from mcast.nodes import EntityNode
+from mcfunction.commands.kill import kill, ParsedKillCommand
+from mcfunction.nodes import EntityNode
 
 
 def test_kill():

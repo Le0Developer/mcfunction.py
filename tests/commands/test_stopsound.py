@@ -1,6 +1,6 @@
 
-from mcast.commands.stopsound import stopsound, ParsedStopsoundCommand
-from mcast.nodes import EntityNode
+from mcfunction.commands.stopsound import stopsound, ParsedStopsoundCommand
+from mcfunction.nodes import EntityNode
 
 
 def test_stopsound():

@@ -1,5 +1,5 @@
 
-from mcast.commands.setidletimeout import (
+from mcfunction.commands.setidletimeout import (
     setidletimeout, ParsedSetidletimeoutCommand
 )
 

@@ -1,5 +1,5 @@
 
-from mcast.commands.clone import clone, ParsedCloneCommand
+from mcfunction.commands.clone import clone, ParsedCloneCommand
 
 
 def test_clone():

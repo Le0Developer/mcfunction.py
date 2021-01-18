@@ -1,6 +1,6 @@
 
-from mcast.commands.scoreboard import scoreboard, ParsedScoreboardCommand
-from mcast.nodes import EntityNode
+from mcfunction.commands.scoreboard import scoreboard, ParsedScoreboardCommand
+from mcfunction.nodes import EntityNode
 
 
 def test_scoreboard_objectives_add():

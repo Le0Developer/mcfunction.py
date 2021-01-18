@@ -1,6 +1,6 @@
 
-from mcast.commands.playsound import playsound, ParsedPlaysoundCommand
-from mcast.nodes import EntityNode, PositionNode
+from mcfunction.commands.playsound import playsound, ParsedPlaysoundCommand
+from mcfunction.nodes import EntityNode, PositionNode
 
 
 def test_playsound():

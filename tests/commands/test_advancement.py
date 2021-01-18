@@ -1,6 +1,6 @@
 
-from mcast.commands.advancement import advancement, ParsedAdvancementCommand
-from mcast.nodes import EntityNode
+from mcfunction.commands.advancement import advancement, ParsedAdvancementCommand
+from mcfunction.nodes import EntityNode
 
 
 def test_advancement_everything():

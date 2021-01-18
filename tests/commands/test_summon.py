@@ -1,6 +1,6 @@
 
-from mcast.commands.summon import summon, ParsedSummonCommand
-from mcast.nodes import PositionNode
+from mcfunction.commands.summon import summon, ParsedSummonCommand
+from mcfunction.nodes import PositionNode
 
 
 def test_summon():

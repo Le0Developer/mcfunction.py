@@ -1,5 +1,5 @@
 
-from mcast.commands.list import list, ParsedListCommand
+from mcfunction.commands.list import list, ParsedListCommand
 
 
 def test_list():

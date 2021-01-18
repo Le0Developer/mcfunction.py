@@ -1,5 +1,5 @@
 
-from mcast.commands.publish import publish, ParsedPublishCommand
+from mcfunction.commands.publish import publish, ParsedPublishCommand
 
 
 def test_publish():

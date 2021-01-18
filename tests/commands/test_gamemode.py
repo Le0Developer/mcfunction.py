@@ -1,6 +1,6 @@
 
-from mcast.commands.gamemode import gamemode, ParsedGamemodeCommand
-from mcast.nodes import EntityNode
+from mcfunction.commands.gamemode import gamemode, ParsedGamemodeCommand
+from mcfunction.nodes import EntityNode
 
 
 def test_gamemode():

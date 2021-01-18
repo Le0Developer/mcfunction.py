@@ -1,6 +1,6 @@
 
-from mcast.commands.deop import deop, ParsedDeopCommand
-from mcast.nodes import EntityNode
+from mcfunction.commands.deop import deop, ParsedDeopCommand
+from mcfunction.nodes import EntityNode
 
 
 def test_deop():

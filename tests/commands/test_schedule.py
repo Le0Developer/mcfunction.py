@@ -1,5 +1,5 @@
 
-from mcast.commands.schedule import schedule, ParsedScheduleCommand
+from mcfunction.commands.schedule import schedule, ParsedScheduleCommand
 
 
 def test_schedule_function():

@@ -1,6 +1,6 @@
 
-from mcast.commands.recipe import recipe, ParsedRecipeCommand
-from mcast.nodes import EntityNode
+from mcfunction.commands.recipe import recipe, ParsedRecipeCommand
+from mcfunction.nodes import EntityNode
 
 
 def test_recipe():

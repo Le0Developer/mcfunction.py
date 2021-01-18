@@ -1,5 +1,5 @@
 
-from mcast.commands.stop import stop, ParsedStopCommand
+from mcfunction.commands.stop import stop, ParsedStopCommand
 
 
 def test_stop():

@@ -3,8 +3,8 @@ import types
 
 import pytest
 
-from mcast import nodes, util
-from mcast.exceptions import ConstructionException, ParserException
+from mcfunction import nodes, util
+from mcfunction.exceptions import ConstructionException, ParserException
 
 
 class TestTokenize:

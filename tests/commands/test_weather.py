@@ -1,5 +1,5 @@
 
-from mcast.commands.weather import weather, ParsedWeatherCommand
+from mcfunction.commands.weather import weather, ParsedWeatherCommand
 
 
 def test_weather():

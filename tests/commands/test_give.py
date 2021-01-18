@@ -1,6 +1,6 @@
 
-from mcast.commands.give import give, ParsedGiveCommand
-from mcast.nodes import EntityNode
+from mcfunction.commands.give import give, ParsedGiveCommand
+from mcfunction.nodes import EntityNode
 
 
 def test_give():

@@ -1,6 +1,6 @@
 
-from mcast.commands.pardon import pardon, ParsedPardonCommand
-from mcast.nodes import EntityNode
+from mcfunction.commands.pardon import pardon, ParsedPardonCommand
+from mcfunction.nodes import EntityNode
 
 
 def test_pardon():

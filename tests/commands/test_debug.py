@@ -1,5 +1,5 @@
 
-from mcast.commands.debug import debug, ParsedDebugCommand
+from mcfunction.commands.debug import debug, ParsedDebugCommand
 
 
 def test_debug():

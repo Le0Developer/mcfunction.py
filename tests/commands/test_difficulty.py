@@ -1,5 +1,5 @@
 
-from mcast.commands.difficulty import difficulty, ParsedDifficultyCommand
+from mcfunction.commands.difficulty import difficulty, ParsedDifficultyCommand
 
 
 def test_difficulty():

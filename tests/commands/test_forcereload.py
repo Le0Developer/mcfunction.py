@@ -1,6 +1,6 @@
 
-from mcast.commands.forcereload import forcereload, ParsedForcereloadCommand
-from mcast.nodes import Position2dNode
+from mcfunction.commands.forcereload import forcereload, ParsedForcereloadCommand
+from mcfunction.nodes import Position2dNode
 
 
 def test_forcereload_add():

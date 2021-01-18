@@ -1,9 +1,9 @@
 
 import pytest
 
-from mcast import nodes, parser_types
-from mcast.exceptions import ParserException
-from mcast.util import get
+from mcfunction import nodes, parser_types
+from mcfunction.exceptions import ParserException
+from mcfunction.util import get
 
 
 def test_any():

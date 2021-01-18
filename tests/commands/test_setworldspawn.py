@@ -1,8 +1,8 @@
 
-from mcast.commands.setworldspawn import (
+from mcfunction.commands.setworldspawn import (
     setworldspawn, ParsedSetworldspawnCommand
 )
-from mcast.nodes import PositionNode, RotationNode
+from mcfunction.nodes import PositionNode, RotationNode
 
 
 def test_setworldspawn():
