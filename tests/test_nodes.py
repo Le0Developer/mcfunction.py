@@ -155,3 +155,10 @@ def test_rotation_node():
 def test_value_node():
     value = nodes.ValueNode(1.23)
     assert str(value) == '1.23'
+
+
+def test_value_double_precision():
+    # more precision isn't precise anymore
+    pi = '3.14159265358979'  # math.pi
+    value = nodes.DoubleNode(float(pi))
+    assert str(value) == pi
