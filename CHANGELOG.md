@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Rename from `mcast` to `mcfunction(.py)`
 - Double precision is now 14 places  (was the default 6 before)
+- Entity parser now accepts UUIDs as selectors
 
 ## 0.1.0
 
