@@ -105,7 +105,8 @@ class JSONNode(Node):
         self.object = object
 
     def __str__(self):
-        return json.dumps(self.object, separators=(',', ':'))
+        return json.dumps(self.object, separators=(',', ':'),
+                          ensure_ascii=False)
 
 
 class NamespaceIDNode(Node):
