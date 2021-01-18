@@ -1,5 +1,7 @@
 
-from mcfunction.commands.worldborder import worldborder, ParsedWordborderCommand
+from mcfunction.commands.worldborder import (
+    worldborder, ParsedWordborderCommand
+)
 from mcfunction.nodes import Position2dNode
 
 

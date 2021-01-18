@@ -1,5 +1,7 @@
 
-from mcfunction.commands.forcereload import forcereload, ParsedForcereloadCommand
+from mcfunction.commands.forcereload import (
+    forcereload, ParsedForcereloadCommand
+)
 from mcfunction.nodes import Position2dNode
 
 

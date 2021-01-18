@@ -1,5 +1,7 @@
 
-from mcfunction.commands.advancement import advancement, ParsedAdvancementCommand
+from mcfunction.commands.advancement import (
+    advancement, ParsedAdvancementCommand
+)
 from mcfunction.nodes import EntityNode
 
 

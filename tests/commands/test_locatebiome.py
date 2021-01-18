@@ -1,5 +1,7 @@
 
-from mcfunction.commands.locatebiome import locatebiome, ParsedLocatebiomeCommand
+from mcfunction.commands.locatebiome import (
+    locatebiome, ParsedLocatebiomeCommand
+)
 
 
 def test_locatebiome():
