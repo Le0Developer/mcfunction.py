@@ -528,13 +528,22 @@ def test_uuid():
     parts = iter((
         '2eb4b815-7a3c-4cf2-8845-bbc03b10ee35',
         '1-2-3-4-5',
+        'a-b-c-d-e',
+        'A-B-C-D-E',
         'invalid'
     ))
 
     node = uuid.parse(parts)
     assert node.value == '2eb4b815-7a3c-4cf2-8845-bbc03b10ee35'
+
     node = uuid.parse(parts)
     assert node.value == '1-2-3-4-5'
+
+    node = uuid.parse(parts)
+    assert node.value == 'a-b-c-d-e'
+
+    node = uuid.parse(parts)
+    assert node.value == 'A-B-C-D-E'
 
     with pytest.raises(ParserException, match='expected valid uuid, not .*'):
         uuid.parse(parts)
