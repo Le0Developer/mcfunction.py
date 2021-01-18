@@ -1,6 +1,6 @@
 [run]
 source =
-    mcast
+    mcfunction
     tests
 
 [report]
