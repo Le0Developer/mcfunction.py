@@ -1,7 +1,7 @@
 
-# Minecraft Ast
+# Minecraft command parser
 
-Abstract Syntax Tree for minecraft commands in pure python (requires python3.7+).
+Command parser and reconstructor for minecraft commands in pure python (requires python3.7+).
 
 This is currently version **[Minecraft 1.16 only](<#versions>)**.
 
@@ -11,8 +11,8 @@ This is currently version **[Minecraft 1.16 only](<#versions>)**.
 You can use the `parse_command` function to parse a command.
 
 ```python
-from mcast import parse_command
-from mcast.commands.summon import ParsedSummonCommand
+from mcfunction import parse_command
+from mcfunction.commands.summon import ParsedSummonCommand
 
 command = parse_command('summon minecraft:ender_dragon ~ ~ ~')
 # command is the parsed command
@@ -35,8 +35,8 @@ print(command)
 You can create the `ParsedCommand` directly if you don't have a string for `parse_command`.
 
 ```python
-from mcast import nodes
-from mcast.commands.summon import ParsedSummonCommand
+from mcfunction import nodes
+from mcfunction.commands.summon import ParsedSummonCommand
 
 command = ParsedSummonCommand(
     'summon',  # first argument is always the command name  (for alias support)
@@ -63,9 +63,9 @@ syntax is `greet <target> [message]`.
 ```python
 from dataclasses import dataclass
 
-from mcast.commands import Command, ParsedCommand, Parser
-from mcast.nodes import EntityNode, RawNode
-from mcast.parser_types import Entity, GreedyAny
+from mcfunction.commands import Command, ParsedCommand, Parser
+from mcfunction.nodes import EntityNode, RawNode
+from mcfunction.parser_types import Entity, GreedyAny
 
 
 # you don't need to use dataclasses, you can create the __init__ yourself
@@ -107,10 +107,10 @@ greet.add_variation(
 
 # parsed = greet.parse('greet @a Hello World')
 
-# from mcast.commands import commands, command_lookup
+# from mcfunction.commands import commands, command_lookup
 # commands.append(greet)
 # command_lookup[greet.name] = greet
-# from mcast import parse_command
+# from mcfunction import parse_command
 # parsed = parse_command('greet @a Hello World')
 ```
 
@@ -167,7 +167,7 @@ Other versions are planned, but will take time.
 
 ## Dependencies
 
-MCAst does not use any external dependencies, but some are needed for testing.
+This project does not use any external dependencies, except for development/testing.
 
 - `pytest`
   - pytest is used for testing the program, install it with
