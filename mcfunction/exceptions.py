@@ -1,11 +1,11 @@
 
-class McAstException(Exception):
+class McFunctionException(Exception):
     ...
 
 
-class ParserException(McAstException):
+class ParserException(McFunctionException):
     ...
 
 
-class ConstructionException(McAstException):
+class ConstructionException(McFunctionException):
     ...
