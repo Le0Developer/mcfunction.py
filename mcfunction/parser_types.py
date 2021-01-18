@@ -292,7 +292,7 @@ class Union(ParserType):
 
 
 class UUID(ParserType):
-    uuid = re.compile(r'[0-9a-f]+-[0-9a-f]+-[0-9a-f]+-[0-9a-f]+-[0-9a-f]+')
+    uuid = re.compile('-'.join([r'[0-9a-fA-F]+'] * 5))
 
     def parse(self, parts: t.Iterator[str]) -> nodes.RawNode:
         arg = get(parts)
