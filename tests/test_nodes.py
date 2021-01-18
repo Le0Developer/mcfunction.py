@@ -94,6 +94,9 @@ def test_json_node():
     json = nodes.JSONNode({'text': 'test successful'})
     assert str(json) == '{"text":"test successful"}'
 
+    json = nodes.JSONNode({'text': 'non-ascii: ± Ä ß é'})
+    assert str(json) == '{"text":"non-ascii: ± Ä ß é"}'
+
 
 class TestNamespaceIDNode:
     def test_name(self):
