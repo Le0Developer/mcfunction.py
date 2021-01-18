@@ -88,6 +88,7 @@ def test_entity():
     entity = parser_types.Entity()
     parts = iter((
         'TestUser',
+        '0-0-0-0-0',
         '@r',
         '@e[type=player]',
         '@everyone',
@@ -98,6 +99,10 @@ def test_entity():
 
     node = entity.parse(parts)
     assert node.selector == 'TestUser'
+    assert not node.conditions
+
+    node = entity.parse(parts)
+    assert node.selector == '0-0-0-0-0'
     assert not node.conditions
 
     node = entity.parse(parts)
