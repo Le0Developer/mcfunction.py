@@ -5,7 +5,7 @@ import re
 import typing as t
 
 from . import nodes
-from .ast import Node
+from .abc import Node
 from .exceptions import ParserException
 from .util import get, tokenize
 

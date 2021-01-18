@@ -1,7 +1,7 @@
 
 import typing as t
 
-from .ast import Node
+from .abc import Node
 from .exceptions import ParserException, ConstructionException
 
 

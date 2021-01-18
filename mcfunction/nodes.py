@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 import typing as t
 
-from .ast import Node
+from .abc import Node
 from .util import clean
 
 
