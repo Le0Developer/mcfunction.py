@@ -442,6 +442,32 @@ def test_position2d():
         position2d.parse(parts)
 
 
+def test_scoreboardentity():
+    scoreboardentity = parser_types.ScoreboardEntity()
+    parts = iter((
+        'Player',
+        '*',
+        'A' * 256,
+        '⨁',
+        ''
+    ))
+
+    node = scoreboardentity.parse(parts)
+    assert node.selector == 'Player'
+
+    node = scoreboardentity.parse(parts)
+    assert node.selector == '*'
+
+    node = scoreboardentity.parse(parts)
+    assert node.selector == 'A' * 256
+
+    node = scoreboardentity.parse(parts)
+    assert node.selector == '⨁'
+
+    with pytest.raises(ParserException, match='invalid username: .*'):
+        scoreboardentity.parse(parts)
+
+
 def test_rotation():
     rotation = parser_types.Rotation()
     parts = iter((
