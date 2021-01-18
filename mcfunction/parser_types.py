@@ -92,7 +92,8 @@ class Entity(ParserType):
             if selector[1:] not in 'aeprs':
                 raise ParserException(f'invalid selector: {arg!r}')
         else:
-            if not self.valid_usernames.fullmatch(selector):
+            if (not self.valid_usernames.fullmatch(selector)
+                    and not UUID.uuid.fullmatch(selector)):
                 # may need some adjusting for chinese people
                 raise ParserException(f'invalid username: {arg!r}')
 
