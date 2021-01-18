@@ -1,6 +1,9 @@
 
+import typing as t
+
 from .commands import Command, command_lookup
 from .exceptions import ParserException
+from .mcfunction import McFunction
 from .util import tokenize
 
 
@@ -12,3 +15,7 @@ def parse_command(command: str):
     cmd = command_lookup[parts[0]]  # type: Command
 
     return cmd.parse(command)
+
+
+def parse_mcfuntion(commands: t.List[str]) -> McFunction:
+    return McFunction.parse(commands)

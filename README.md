@@ -118,6 +118,46 @@ greet.add_variation(
 </details>
 
 
+## Parsing & Reconstruction of .mcfunction files
+
+You can use the `parse_mcfunction` function to parse a mcfunction file.
+
+You could parse each line with `parse_command`, but you'd need to ignore
+comments and blank lines (so it doesn't crash).  `parse_mcfunction` handles
+blank lines and comments for you.
+
+```python
+from mcfunction import parse_mcfunction
+from mcfunction.mcfunction import NoCommand
+
+commands = [
+    '# summon enderdragon'
+    'summon minecraft:ender_dragon ~ ~ ~',
+    '',
+    '#summon wither',  # both comment styles supported
+    'summon minecraft:wither ~ ~ ~',
+]
+mcfunction = parse_mcfunction(commands)
+
+# get the summon commands by simply accessing the list
+summon_enderdragon = mcfunction.commands[1]
+summon_wither = mcfunction.commands[4]
+
+for command in mcfunction.commands:
+    # only print commands, not blank lines or comments
+    if not isinstance(command, NoCommand):
+        print('command', command)
+
+# you can access the comment
+print(mcfunction.commands[0].comment.value)
+# change it;
+mcfunction.commands[0].comment.value = 'summon sheep'
+summon_enderdragon.entity.name = 'sheep'
+# you can also change the style
+mcfunction.commands[2].command = '# '
+```
+
+
 ## Versions
 
 The current command syntaxes are (probably) only going to work on Minecraft 1.16.
