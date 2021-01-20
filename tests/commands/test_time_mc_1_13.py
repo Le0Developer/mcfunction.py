@@ -13,18 +13,20 @@ def test_time_add():
 
 
 def test_time_query():
-    parsed = time.parse('time query gametime')
+    parsed = time.parse('time query day')
     parsed: ParsedTimeCommand
 
     assert parsed.action.value == 'query'
-    assert parsed.time.value == 'gametime'
+    assert parsed.time.value == 'day'
 
-    assert str(parsed) == 'time query gametime'
+    assert str(parsed) == 'time query day'
 
 
 def test_time_set():
-    parsed = time.parse('time set 69')
+    parsed = time.parse('time set noon')
     parsed: ParsedTimeCommand
 
     assert parsed.action.value == 'set'
-    assert parsed.time.value == '69'
+    assert parsed.time.value == 'noon'
+
+    assert str(parsed) == 'time set noon'
