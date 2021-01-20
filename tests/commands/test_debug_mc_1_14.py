@@ -1,5 +1,5 @@
 
-from mcfunction.versions.mc_1_8.debug import debug, ParsedDebugCommand
+from mcfunction.versions.mc_1_14.debug import debug, ParsedDebugCommand
 
 
 def test_debug():
