@@ -1,5 +1,5 @@
 
-from mcfunction.versions.mc_1_13.data import data, ParsedDataCommand
+from mcfunction.versions.mc_1_15.data import data, ParsedDataCommand
 from mcfunction.nodes import EntityNode, PositionNode
 
 
