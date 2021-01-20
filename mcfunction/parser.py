@@ -20,5 +20,6 @@ def parse_command(command: str, version: MinecraftVersion = None):
     return cmd.parse(command)
 
 
-def parse_mcfuntion(commands: t.List[str]) -> McFunction:
-    return McFunction.parse(commands)
+def parse_mcfuntion(commands: t.List[str], version: MinecraftVersion = None) \
+        -> McFunction:
+    return McFunction.parse(commands, version)
