@@ -12,17 +12,11 @@ class ParsedAdvancementCommand(ParsedCommand):
 
     action: RawNode
     target: EntityNode
-    mode: RawNode = None
+    mode: RawNode
     advancement: NamespaceIDNode = None
     criterion: RawNode = None
 
     def __str__(self):
-        if self.action.value == 'test':
-            base = f'{self.command} {self.action} {self.target}'
-            if self.criterion is not None:
-                return f'{base} {self.advancement} {self.criterion}'
-            return f'{base} {self.advancement}'
-
         base = f'{self.command} {self.action} {self.target} {self.mode}'
         if self.advancement is not None:
             if self.criterion is not None:
@@ -54,21 +48,5 @@ advancement.add_variation(
     Parser(Union('grant', 'revoke'), 'action'),
     Parser(Entity(), 'target'),
     Parser(Union('only', 'from', 'through', 'until'), 'mode'),
-    Parser(NamespaceID(), 'advancement'),
-)
-
-# advancement test <targets> <advancement> [<criterion>]
-#  - advancement test <targets> <advancement> <criterion>
-advancement.add_variation(
-    Parser(Literal('test'), 'action'),
-    Parser(Entity(), 'target'),
-    Parser(NamespaceID(), 'advancement'),
-    Parser(Any(), 'criterion'),
-)
-
-#  - advancement test <targets> <advancement>
-advancement.add_variation(
-    Parser(Literal('test'), 'action'),
-    Parser(Entity(), 'target'),
     Parser(NamespaceID(), 'advancement'),
 )
