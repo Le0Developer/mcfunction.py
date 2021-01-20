@@ -1,5 +1,5 @@
 
-from mcfunction.commands.help import help, ParsedHelpCommand
+from mcfunction.versions.mc_1_8.help import help, ParsedHelpCommand
 
 
 def test_help():

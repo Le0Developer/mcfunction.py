@@ -1,5 +1,7 @@
 
-from mcfunction.commands.particle import particle, ParsedParticleCommand
+from mcfunction.versions.mc_1_13.particle import (
+    particle, ParsedParticleCommand
+)
 from mcfunction.nodes import EntityNode, PositionNode
 
 

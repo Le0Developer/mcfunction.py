@@ -1,5 +1,5 @@
 
-from mcfunction.commands.save_off import save_off, ParsedSaveOffCommand
+from mcfunction.versions.mc_1_8.save_off import save_off, ParsedSaveOffCommand
 
 
 def test_save_off():

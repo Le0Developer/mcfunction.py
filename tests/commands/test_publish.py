@@ -1,5 +1,5 @@
 
-from mcfunction.commands.publish import publish, ParsedPublishCommand
+from mcfunction.versions.mc_1_8.publish import publish, ParsedPublishCommand
 
 
 def test_publish():

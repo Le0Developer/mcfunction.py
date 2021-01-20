@@ -1,5 +1,5 @@
 
-from mcfunction.commands.setidletimeout import (
+from mcfunction.versions.mc_1_8.setidletimeout import (
     setidletimeout, ParsedSetidletimeoutCommand
 )
 

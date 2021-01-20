@@ -1,5 +1,5 @@
 
-from mcfunction.commands.loot import loot, ParsedLootCommand
+from mcfunction.versions.mc_1_14.loot import loot, ParsedLootCommand
 from mcfunction.nodes import EntityNode, PositionNode
 
 

@@ -1,5 +1,5 @@
 
-from mcfunction.commands.locatebiome import (
+from mcfunction.versions.mc_1_16.locatebiome import (
     locatebiome, ParsedLocatebiomeCommand
 )
 

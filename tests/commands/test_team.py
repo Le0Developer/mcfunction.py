@@ -1,5 +1,5 @@
 
-from mcfunction.commands.team import team, ParsedTeamCommand
+from mcfunction.versions.mc_1_13.team import team, ParsedTeamCommand
 from mcfunction.nodes import EntityNode
 
 

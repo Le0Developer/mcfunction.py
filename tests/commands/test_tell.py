@@ -1,5 +1,5 @@
 
-from mcfunction.commands.tell import tell, ParsedTellCommand
+from mcfunction.versions.mc_1_8.tell import tell, ParsedTellCommand
 from mcfunction.nodes import EntityNode
 
 

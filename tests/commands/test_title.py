@@ -1,5 +1,5 @@
 
-from mcfunction.commands.title import title, ParsedTitleCommand
+from mcfunction.versions.mc_1_11.title import title, ParsedTitleCommand
 from mcfunction.nodes import EntityNode
 
 

@@ -1,5 +1,5 @@
 
-from mcfunction.commands.me import me, ParsedMeCommand
+from mcfunction.versions.mc_1_8.me import me, ParsedMeCommand
 
 
 def test_me():

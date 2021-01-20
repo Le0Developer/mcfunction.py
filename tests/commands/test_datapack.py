@@ -1,5 +1,7 @@
 
-from mcfunction.commands.datapack import datapack, ParsedDatapackCommand
+from mcfunction.versions.mc_1_13.datapack import (
+    datapack, ParsedDatapackCommand
+)
 
 
 def test_datapack_enable():

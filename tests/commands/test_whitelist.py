@@ -1,5 +1,7 @@
 
-from mcfunction.commands.whitelist import whitelist, ParsedWhitelistCommand
+from mcfunction.versions.mc_1_8.whitelist import (
+    whitelist, ParsedWhitelistCommand
+)
 from mcfunction.nodes import EntityNode
 
 

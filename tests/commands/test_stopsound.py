@@ -1,5 +1,7 @@
 
-from mcfunction.commands.stopsound import stopsound, ParsedStopsoundCommand
+from mcfunction.versions.mc_1_9.stopsound import (
+    stopsound, ParsedStopsoundCommand
+)
 from mcfunction.nodes import EntityNode
 
 

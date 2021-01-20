@@ -1,5 +1,5 @@
 
-from mcfunction.commands.reload import reload, ParsedReloadCommand
+from mcfunction.versions.mc_1_12.reload import reload, ParsedReloadCommand
 
 
 def test_reload():

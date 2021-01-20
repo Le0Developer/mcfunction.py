@@ -1,5 +1,5 @@
 
-from mcfunction.commands.teammsg import teammsg, ParsedTeammsgCommand
+from mcfunction.versions.mc_1_14.teammsg import teammsg, ParsedTeammsgCommand
 
 
 def test_teammsg():

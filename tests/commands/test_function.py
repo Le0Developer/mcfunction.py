@@ -1,5 +1,7 @@
 
-from mcfunction.commands.function import function, ParsedFunctionCommand
+from mcfunction.versions.mc_1_13.function import (
+    function, ParsedFunctionCommand
+)
 
 
 def test_function():

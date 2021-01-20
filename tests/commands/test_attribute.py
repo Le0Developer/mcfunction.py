@@ -1,5 +1,7 @@
 
-from mcfunction.commands.attribute import attribute, ParsedAttributeCommand
+from mcfunction.versions.mc_1_16.attribute import (
+    attribute, ParsedAttributeCommand
+)
 from mcfunction.nodes import EntityNode
 
 

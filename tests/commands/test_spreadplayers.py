@@ -1,5 +1,5 @@
 
-from mcfunction.commands.spreadplayers import (
+from mcfunction.versions.mc_1_16.spreadplayers import (
     spreadplayers, ParsedSpreadplayersCommand
 )
 from mcfunction.nodes import EntityNode, Position2dNode

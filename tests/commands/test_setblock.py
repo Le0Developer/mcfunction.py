@@ -1,5 +1,5 @@
 
-from mcfunction.commands.setblock import setblock, ParsedSetblockCommand
+from mcfunction.versions.mc_1_8.setblock import setblock, ParsedSetblockCommand
 from mcfunction.nodes import PositionNode
 
 

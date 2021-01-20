@@ -1,5 +1,5 @@
 
-from mcfunction.commands.fill import fill, ParsedFillCommand
+from mcfunction.versions.mc_1_8.fill import fill, ParsedFillCommand
 from mcfunction.nodes import PositionNode
 
 

@@ -1,18 +1,21 @@
 
 import typing as t
 
-from .commands import Command, command_lookup
+from .versions import VERSIONS, Command, MinecraftVersion
 from .exceptions import ParserException
 from .mcfunction import McFunction
 from .util import tokenize
 
 
-def parse_command(command: str):
-    parts = list(tokenize(command, ' '))
+def parse_command(command: str, version: MinecraftVersion = None):
+    if version is None:
+        version = VERSIONS[0]
 
-    if parts[0] not in command_lookup:
-        raise ParserException(f'unknown command {parts[0]}')
-    cmd = command_lookup[parts[0]]  # type: Command
+    name = list(tokenize(command, ' '))[0]
+
+    cmd = version.get_command(name)  # type: Command
+    if cmd is None:
+        raise ParserException(f'unknown command {name}')
 
     return cmd.parse(command)
 

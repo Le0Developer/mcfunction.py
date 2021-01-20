@@ -1,5 +1,5 @@
 
-from mcfunction.commands.enchant import enchant, ParsedEnchantCommand
+from mcfunction.versions.mc_1_8.enchant import enchant, ParsedEnchantCommand
 from mcfunction.nodes import EntityNode
 
 

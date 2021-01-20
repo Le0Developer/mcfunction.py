@@ -1,5 +1,5 @@
 
-from mcfunction.commands.kick import kick, ParsedKickCommand
+from mcfunction.versions.mc_1_8.kick import kick, ParsedKickCommand
 from mcfunction.nodes import EntityNode
 
 

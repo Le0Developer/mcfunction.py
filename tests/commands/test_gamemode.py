@@ -1,5 +1,7 @@
 
-from mcfunction.commands.gamemode import gamemode, ParsedGamemodeCommand
+from mcfunction.versions.mc_1_13.gamemode import (
+    gamemode, ParsedGamemodeCommand
+)
 from mcfunction.nodes import EntityNode
 
 

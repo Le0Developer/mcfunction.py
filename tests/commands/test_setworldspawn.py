@@ -1,5 +1,5 @@
 
-from mcfunction.commands.setworldspawn import (
+from mcfunction.versions.mc_1_16.setworldspawn import (
     setworldspawn, ParsedSetworldspawnCommand
 )
 from mcfunction.nodes import PositionNode, RotationNode

@@ -1,5 +1,5 @@
 
-from mcfunction.commands.give import give, ParsedGiveCommand
+from mcfunction.versions.mc_1_8.give import give, ParsedGiveCommand
 from mcfunction.nodes import EntityNode
 
 

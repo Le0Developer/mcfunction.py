@@ -1,5 +1,7 @@
 
-from mcfunction.commands.experience import experience, ParsedExperienceCommand
+from mcfunction.versions.mc_1_13.experience import (
+    experience, ParsedExperienceCommand
+)
 from mcfunction.nodes import EntityNode
 
 

@@ -1,5 +1,5 @@
 
-from mcfunction.commands.summon import summon, ParsedSummonCommand
+from mcfunction.versions.mc_1_8.summon import summon, ParsedSummonCommand
 from mcfunction.nodes import PositionNode
 
 

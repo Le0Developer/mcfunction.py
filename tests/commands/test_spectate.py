@@ -1,5 +1,7 @@
 
-from mcfunction.commands.spectate import spectate, ParsedSpectateCommand
+from mcfunction.versions.mc_1_15.spectate import (
+    spectate, ParsedSpectateCommand
+)
 from mcfunction.nodes import EntityNode
 
 

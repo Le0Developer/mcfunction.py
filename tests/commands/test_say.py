@@ -1,5 +1,5 @@
 
-from mcfunction.commands.say import say, ParsedSayCommand
+from mcfunction.versions.mc_1_8.say import say, ParsedSayCommand
 
 
 def test_say():

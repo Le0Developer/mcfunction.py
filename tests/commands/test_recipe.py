@@ -1,5 +1,5 @@
 
-from mcfunction.commands.recipe import recipe, ParsedRecipeCommand
+from mcfunction.versions.mc_1_12.recipe import recipe, ParsedRecipeCommand
 from mcfunction.nodes import EntityNode
 
 

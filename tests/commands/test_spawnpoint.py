@@ -1,5 +1,7 @@
 
-from mcfunction.commands.spawnpoint import spawnpoint, ParsedSpawnpointCommand
+from mcfunction.versions.mc_1_16.spawnpoint import (
+    spawnpoint, ParsedSpawnpointCommand
+)
 from mcfunction.nodes import EntityNode, PositionNode, RotationNode
 
 

@@ -1,5 +1,5 @@
 
-from mcfunction.commands.clone import clone, ParsedCloneCommand
+from mcfunction.versions.mc_1_8.clone import clone, ParsedCloneCommand
 
 
 def test_clone():

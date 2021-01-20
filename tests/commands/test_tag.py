@@ -1,5 +1,5 @@
 
-from mcfunction.commands.tag import tag, ParsedTagCommand
+from mcfunction.versions.mc_1_13.tag import tag, ParsedTagCommand
 from mcfunction.nodes import EntityNode
 
 

@@ -1,5 +1,7 @@
 
-from mcfunction.commands.teleport import teleport, ParsedTeleportCommand
+from mcfunction.versions.mc_1_13.teleport import (
+    teleport, ParsedTeleportCommand
+)
 from mcfunction.nodes import EntityNode, PositionNode, RotationNode
 
 

@@ -1,5 +1,5 @@
 
-from mcfunction.commands.defaultgamemode import (
+from mcfunction.versions.mc_1_8.defaultgamemode import (
     defaultgamemode, ParsedDefaultgamemodeCommand
 )
 

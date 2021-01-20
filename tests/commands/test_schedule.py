@@ -1,5 +1,7 @@
 
-from mcfunction.commands.schedule import schedule, ParsedScheduleCommand
+from mcfunction.versions.mc_1_15.schedule import (
+    schedule, ParsedScheduleCommand
+)
 
 
 def test_schedule_function():

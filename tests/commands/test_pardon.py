@@ -1,5 +1,5 @@
 
-from mcfunction.commands.pardon import pardon, ParsedPardonCommand
+from mcfunction.versions.mc_1_8.pardon import pardon, ParsedPardonCommand
 from mcfunction.nodes import EntityNode
 
 

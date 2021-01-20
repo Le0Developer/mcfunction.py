@@ -1,5 +1,5 @@
 
-from mcfunction.commands.tellraw import tellraw, ParsedTellrawCommand
+from mcfunction.versions.mc_1_8.tellraw import tellraw, ParsedTellrawCommand
 from mcfunction.nodes import EntityNode
 
 

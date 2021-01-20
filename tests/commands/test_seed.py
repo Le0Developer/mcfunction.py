@@ -1,5 +1,5 @@
 
-from mcfunction.commands.seed import seed, ParsedSeedCommand
+from mcfunction.versions.mc_1_8.seed import seed, ParsedSeedCommand
 
 
 def test_seed():

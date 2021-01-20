@@ -1,5 +1,5 @@
 
-from mcfunction.commands.effect import effect, ParsedEffectCommand
+from mcfunction.versions.mc_1_8.effect import effect, ParsedEffectCommand
 from mcfunction.nodes import EntityNode
 
 

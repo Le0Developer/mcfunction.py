@@ -1,5 +1,7 @@
 
-from mcfunction.commands.scoreboard import scoreboard, ParsedScoreboardCommand
+from mcfunction.versions.mc_1_13.scoreboard import (
+    scoreboard, ParsedScoreboardCommand
+)
 from mcfunction.nodes import EntityNode
 
 

@@ -1,5 +1,5 @@
 
-from mcfunction.commands.kill import kill, ParsedKillCommand
+from mcfunction.versions.mc_1_15.kill import kill, ParsedKillCommand
 from mcfunction.nodes import EntityNode
 
 

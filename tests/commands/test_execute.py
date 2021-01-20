@@ -1,5 +1,5 @@
 
-from mcfunction.commands.execute import (
+from mcfunction.versions.mc_1_15.execute import (
     execute, ParsedExecuteCommand, ParsedExecuteCondition
 )
 from mcfunction.nodes import EntityNode, PositionNode, RotationNode

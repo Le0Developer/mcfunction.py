@@ -1,5 +1,5 @@
 
-from mcfunction.commands.op import op, ParsedOpCommand
+from mcfunction.versions.mc_1_8.op import op, ParsedOpCommand
 from mcfunction.nodes import EntityNode
 
 

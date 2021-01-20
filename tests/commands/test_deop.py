@@ -1,5 +1,5 @@
 
-from mcfunction.commands.deop import deop, ParsedDeopCommand
+from mcfunction.versions.mc_1_8.deop import deop, ParsedDeopCommand
 from mcfunction.nodes import EntityNode
 
 

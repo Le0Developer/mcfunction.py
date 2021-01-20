@@ -2,6 +2,7 @@
 from dataclasses import dataclass
 import typing as t
 
+from .versions import MinecraftVersion
 from .abc import ParsedCommand
 from .nodes import RawNode
 
@@ -29,7 +30,8 @@ class McFunction:
         return '\n'.join(str(cmd) for cmd in self.commands)
 
     @classmethod
-    def parse(cls: t.Type[T], lines: t.List[str]) -> T:
+    def parse(cls: t.Type[T], lines: t.List[str],
+              version: MinecraftVersion = None) -> T:
         from .parser import parse_command  # circular import :/
 
         commands = []
@@ -47,6 +49,6 @@ class McFunction:
                     comment=RawNode(command[1:])
                 ))
             else:
-                commands.append(parse_command(command))
+                commands.append(parse_command(command, version))
 
         return cls(commands)

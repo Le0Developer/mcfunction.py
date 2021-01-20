@@ -1,5 +1,7 @@
 
-from mcfunction.commands.playsound import playsound, ParsedPlaysoundCommand
+from mcfunction.versions.mc_1_9.playsound import (
+    playsound, ParsedPlaysoundCommand
+)
 from mcfunction.nodes import EntityNode, PositionNode
 
 

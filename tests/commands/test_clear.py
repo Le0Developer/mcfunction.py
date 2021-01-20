@@ -1,5 +1,5 @@
 
-from mcfunction.commands.clear import clear, ParsedClearCommand
+from mcfunction.versions.mc_1_8.clear import clear, ParsedClearCommand
 from mcfunction.nodes import EntityNode
 
 

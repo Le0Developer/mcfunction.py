@@ -1,5 +1,5 @@
 
-from mcfunction.commands.replaceitem import (
+from mcfunction.versions.mc_1_8.replaceitem import (
     replaceitem, ParsedReplaceitemCommand
 )
 from mcfunction.nodes import EntityNode, PositionNode

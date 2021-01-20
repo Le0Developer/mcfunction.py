@@ -1,5 +1,5 @@
 
-from mcfunction.commands.ban import ban, ParsedBanCommand
+from mcfunction.versions.mc_1_8.ban import ban, ParsedBanCommand
 from mcfunction.nodes import EntityNode
 
 

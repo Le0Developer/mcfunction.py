@@ -1,5 +1,5 @@
 
-from mcfunction.commands.trigger import trigger, ParsedTriggerCommand
+from mcfunction.versions.mc_1_8.trigger import trigger, ParsedTriggerCommand
 
 
 def test_trigger():

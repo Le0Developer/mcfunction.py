@@ -1,5 +1,5 @@
 
-from mcfunction.commands.bossbar import bossbar, ParsedBossbarCommand
+from mcfunction.versions.mc_1_13.bossbar import bossbar, ParsedBossbarCommand
 
 
 def test_bossbar_add():
