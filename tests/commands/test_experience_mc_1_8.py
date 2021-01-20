@@ -43,4 +43,3 @@ def test_experience_target_levels():
     assert isinstance(parsed.target, EntityNode)
 
     assert str(parsed) == 'experience 69L @p'
-

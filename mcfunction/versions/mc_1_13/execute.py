@@ -11,8 +11,8 @@ from ...nodes import (
 )
 from ...parser import parse_command
 from ...parser_types import (
-    Any, Block, Double, Entity, Literal, NamespaceID, Objective, Position,
-    ScoreboardEntity, Rotation, Union
+    Any, Double, Entity, Literal, NamespaceID, Position, ScoreboardEntity,
+    Rotation, Union
 )
 from ...util import ensure_nodes, tokenize
 
