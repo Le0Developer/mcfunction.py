@@ -10,7 +10,7 @@ backslash = '\\'
 split_dept = {'(': ')', '[': ']', '{': '}', '\'': '\'', '"': '"'}
 
 
-def tokenize(string: str, sep: str) -> t.Iterable[str]:
+def tokenize(string: str, sep: str) -> t.Iterator[str]:
     assert len(sep) == 1
     start = 0
     dept = []
