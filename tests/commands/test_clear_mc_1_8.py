@@ -31,10 +31,19 @@ def test_clear_item():
     assert str(parsed) == 'clear @e test:item'
 
 
+def test_clear_data():
+    parsed = clear.parse('clear @e test:item data')
+    parsed: ParsedClearCommand
+
+    assert parsed.data.value == 'data'
+
+    assert str(parsed) == 'clear @e test:item data'
+
+
 def test_clear_count():
-    parsed = clear.parse('clear @e test:item 69')
+    parsed = clear.parse('clear @e test:item data 69')
     parsed: ParsedClearCommand
 
     assert parsed.count.value == 69
 
-    assert str(parsed) == 'clear @e test:item 69'
+    assert str(parsed) == 'clear @e test:item data 69'

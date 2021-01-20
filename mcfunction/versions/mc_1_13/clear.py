@@ -2,8 +2,8 @@
 from dataclasses import dataclass
 
 from .. import Command, ParsedCommand, Parser
-from ...nodes import EntityNode, IntegerNode, ItemNode, RawNode
-from ...parser_types import Any, Entity, Integer, Item
+from ...nodes import EntityNode, IntegerNode, ItemNode
+from ...parser_types import Entity, Integer, Item
 
 
 @dataclass()
@@ -12,18 +12,14 @@ class ParsedClearCommand(ParsedCommand):
 
     target: EntityNode = None
     item: ItemNode = None
-    data: RawNode = None
     count: IntegerNode = None
 
     def __str__(self):
         if self.target is not None:
             if self.item is not None:
-                if self.data is not None:
-                    if self.count is not None:
-                        return f'{self.command} {self.target} {self.item} ' \
-                               f'{self.data} {self.count}'
+                if self.count is not None:
                     return f'{self.command} {self.target} {self.item} ' \
-                           f'{self.data}'
+                           f'{self.count}'
                 return f'{self.command} {self.target} {self.item}'
             return f'{self.command} {self.target}'
         return self.command
@@ -32,19 +28,12 @@ class ParsedClearCommand(ParsedCommand):
 clear = Command('clear', parsed=ParsedClearCommand)
 
 
-# clear [<targets>] [<item>] [<data>] [<count>]
-#  - clear <targets> <item> <data> <count>
+# clear [<targets>] [<item>] [<maxCount>]
+#  - clear <targets> <item> <maxCount>
 clear.add_variation(
     Parser(Entity(), 'target'),
     Parser(Item(), 'item'),
-    Parser(Any(), 'data'),
     Parser(Integer(), 'count'),
-)
-#  - clear <targets> <item> <data>
-clear.add_variation(
-    Parser(Entity(), 'target'),
-    Parser(Item(), 'item'),
-    Parser(Any(), 'data'),
 )
 #  - clear <targets> <item>
 clear.add_variation(
