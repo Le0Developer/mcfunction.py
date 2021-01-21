@@ -162,7 +162,7 @@ class ParsedExecuteCondition(ParsedCommand):
 
 
 class ExecuteCommand(Command):
-    def parse(self, command: str):
+    def parse(self, command: str, version: MinecraftVersion = None):
         # remove command name
         command = ' '.join(tuple(tokenize(command, ' '))[1:])
         conditions = []
@@ -195,7 +195,8 @@ class ExecuteCommand(Command):
                     parsed = self.parsed(**result)
                     if parsed.action.value == 'run':
                         return ParsedExecuteCommand(
-                            'execute', conditions, parse_command(command)
+                            'execute', conditions,
+                            parse_command(command, version)
                         )
                     conditions.append(self.parsed(**result))
                     break

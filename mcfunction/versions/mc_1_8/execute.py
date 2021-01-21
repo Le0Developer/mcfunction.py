@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-from .. import Command, ParsedCommand, Parser
+from .. import Command, MinecraftVersion, ParsedCommand, Parser
 from ...exceptions import ParserException
 from ...nodes import BlockNode, EntityNode, IntegerNode, PositionNode, RawNode
 from ...parser import parse_command
@@ -33,7 +33,7 @@ class ParsedExecuteCommand(ParsedCommand):
 
 
 class ExecuteCommand(Command):
-    def parse(self, command: str):
+    def parse(self, command: str, version: MinecraftVersion = None):
         exception = None
         exception_dept = -1
         for variation in self.variations:
@@ -57,7 +57,7 @@ class ExecuteCommand(Command):
                         result[parser.destination] = node
 
             else:
-                result['run'] = parse_command(' '.join(parts))
+                result['run'] = parse_command(' '.join(parts), version)
                 return self.parsed(**result)
 
         if exception is None:  # pragma: no cover

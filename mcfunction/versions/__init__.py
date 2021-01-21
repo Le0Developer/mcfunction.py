@@ -86,7 +86,7 @@ class Command:
     def add_variation(self, *parsers: Parser):
         self.variations.append(parsers)
 
-    def parse(self, command: str):
+    def parse(self, command: str, version: MinecraftVersion = None):
         exception = None
         exception_dept = -1
         for variation in self.variations:

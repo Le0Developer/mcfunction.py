@@ -17,7 +17,7 @@ def parse_command(command: str, version: MinecraftVersion = None):
     if cmd is None:
         raise ParserException(f'unknown command {name}')
 
-    return cmd.parse(command)
+    return cmd.parse(command, version)
 
 
 def parse_mcfuntion(commands: t.List[str], version: MinecraftVersion = None) \
