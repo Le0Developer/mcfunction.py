@@ -22,7 +22,7 @@ class MinecraftVersion:
             removed_commands = set()
         self.removed_commands = removed_commands
 
-    def populate_commands(self):
+    def populate_commands(self):  # pragma: no cover
         spec = importlib.util.find_spec(self.module)
         origin = Path(spec.origin).parent
         for file in origin.iterdir():
