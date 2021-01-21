@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- `load`, `loads`, `dump` and `dumps` to mcfunction
 
 
 ## [0.3.0]
