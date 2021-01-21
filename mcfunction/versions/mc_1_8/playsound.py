@@ -2,7 +2,7 @@
 from dataclasses import dataclass
 
 from .. import Command, ParsedCommand, Parser
-from ...nodes import (DoubleNode, EntityNode, NamespaceIDNode, PositionNode
+from ...nodes import DoubleNode, EntityNode, NamespaceIDNode, PositionNode
 from ...parser_types import Double, Entity, NamespaceID, Position
 
 
