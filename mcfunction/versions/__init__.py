@@ -142,7 +142,10 @@ VERSIONS = [
 ]
 
 
-def get_version(version: str):
+def get_version(version: str = None):
+    if version is None:
+        return VERSIONS[0]
+
     for ver in VERSIONS:
         if ver.version == version:
             return ver
