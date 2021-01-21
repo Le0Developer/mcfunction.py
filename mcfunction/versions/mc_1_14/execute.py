@@ -3,7 +3,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 import typing as t
 
-from .. import Command, ParsedCommand, Parser
+from .. import Command, MinecraftVersion, ParsedCommand, Parser
 from ...exceptions import ConstructionException, ParserException
 from ...nodes import (
     BlockNode, DoubleNode, EntityNode, NamespaceIDNode, PositionNode, RawNode,
