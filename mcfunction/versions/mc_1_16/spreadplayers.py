@@ -34,7 +34,7 @@ spreadplayers = Command('spreadplayers', parsed=ParsedSpreadplayersCommand)
 # spreadplayers <center> <spreadDistance> <maxRange> <respectTeams> <targets>
 spreadplayers.add_variation(
     Parser(Position2d(), 'center'),
-    Parser(Double(), 'distance'),  # technically a float, not double
+    Parser(Double(), 'distance'),
     Parser(Double(), 'range'),
     Parser(Union('true', 'false'), 'teams'),
     Parser(Entity(), 'target'),
