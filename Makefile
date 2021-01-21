@@ -50,10 +50,10 @@ lint: ## check style with flake8
 	python3 -m flake8
 
 test: ## run tests quickly with the default Python
-	python3 -m pytest
+	python3 -m pytest --import-mode=importlib
 
 coverage: ## check code coverage quickly with the default Python
-	python3 -m coverage run -m pytest
+	python3 -m coverage run -m pytest --import-mode=importlib
 	coverage html
 	$(BROWSER) htmlcov/index.html
 

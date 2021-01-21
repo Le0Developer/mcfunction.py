@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Command syntax of more minecraft versions (1.8 - 1.16)
+
 ### Fixed
 
 - Typehint of `util.tokenize`
