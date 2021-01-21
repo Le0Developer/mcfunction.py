@@ -12,7 +12,7 @@ You can use the `parse_command` function to parse a command.
 
 ```python
 from mcfunction import parse_command
-from mcfunction.commands.summon import ParsedSummonCommand
+from mcfunction.versions.mc_1_8.summon import ParsedSummonCommand
 
 command = parse_command('summon minecraft:ender_dragon ~ ~ ~')
 # command is the parsed command
@@ -36,7 +36,8 @@ You can create the `ParsedCommand` directly if you don't have a string for `pars
 
 ```python
 from mcfunction import nodes
-from mcfunction.commands.summon import ParsedSummonCommand
+from mcfunction.versions.mc_1_8.summon import ParsedSummonCommand
+# versions.mc_1_8 because the summon command were using was last changed in 1.8
 
 command = ParsedSummonCommand(
     'summon',  # first argument is always the command name  (for alias support)
@@ -160,10 +161,26 @@ mcfunction.commands[2].command = '# '
 
 ## Versions
 
-The current command syntaxes are (probably) only going to work on Minecraft 1.16.
+This library currently supports **1.8 - 1.16**.
 
-Other versions are planned, but will take time.
+When using a parse function (`parse_command` and `parse_mcfunction`) you can
+specfiy which version's syntax you want (defaults to the latest version).
 
+```python
+from mcfunction import parse_command, get_version
+from mcfunction.versions.mc_1_8.execute import ParsedExecuteCommand
+
+version = get_version('1.8')  # 1.8, 1.9, 1.10, ...
+
+# execute was reworked in 1.13 with totally new syntax, but
+# we can use the old 1.8 syntax with this
+command = parse_command('execute @p ~ ~ ~ say 1.8 > all', version)
+command: ParsedExecuteCommand  # for type hinting
+```
+
+> **NOTE**: Note for type-hinting. If you're using e.g. 1.16 and a command
+> which wasn't changed since 1.8, you have to use 1.8 as version when importing.
+> `mcfunction.versions.mc_1_8.ban` instead of `mcfunction.versions.mc_1_16.ban`
 
 ## Dependencies
 
