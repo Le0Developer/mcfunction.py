@@ -90,3 +90,9 @@ class McFunction:
 
     def __str__(self):
         return self.dumps()
+
+
+load = McFunction.load
+loads = McFunction.loads
+dump = McFunction.dump
+dumps = McFunction.dumps
