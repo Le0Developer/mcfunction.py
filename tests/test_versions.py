@@ -1,5 +1,5 @@
 
-from mcfunction import get_version
+from mcfunction import get_version, VERSIONS
 
 
 version = get_version('1.13')
@@ -20,3 +20,7 @@ def test_older_command():
 
 def test_older_deleted_command():
     assert version.get_command('achievement') is None  # removed in 1.12
+
+
+def test_get_version():
+    assert get_version() is VERSIONS[0]
