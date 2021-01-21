@@ -142,6 +142,12 @@ VERSIONS = [
 ]
 
 
+def get_version(version: str):
+    for ver in VERSIONS:
+        if ver.version == version:
+            return ver
+
+
 def _main():
     for version in VERSIONS:
         version.populate_commands()
