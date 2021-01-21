@@ -1,13 +1,13 @@
 
 from . import abc, exceptions, mcfunction, nodes, parser_types
 from .__version__ import __version__
-from .versions import _main as _version_importer, get_version
+from .versions import _main as _version_importer, get_version, VERSIONS
 from .parser import parse_command, parse_mcfuntion
 
 __all__ = [
     'abc', 'exceptions', 'mcfunction', 'nodes', 'parser_types',
     '__version__',
-    'get_version',
+    'get_version', 'VERSIONS',
     'parse_command', 'parse_mcfuntion'
 ]
 
