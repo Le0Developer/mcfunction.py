@@ -64,7 +64,7 @@ syntax is `greet <target> [message]`.
 ```python
 from dataclasses import dataclass
 
-from mcfunction.commands import Command, ParsedCommand, Parser
+from mcfunction.versions import Command, ParsedCommand, Parser
 from mcfunction.nodes import EntityNode, RawNode
 from mcfunction.parser_types import Entity, GreedyAny
 
@@ -103,16 +103,16 @@ greet.add_variation(
     Parser(Entity(), 'target')
 )
 
-# and now you have your own command, you can use 'greet.parse' or add the
-# command to the command list to make it useable in 'parse_command'
 
-# parsed = greet.parse('greet @a Hello World')
+# you can use `greet.parse` to parse a command now
+parsed = greet.parse('greet @a Hello World')
 
-# from mcfunction.commands import commands, command_lookup
-# commands.append(greet)
-# command_lookup[greet.name] = greet
-# from mcfunction import parse_command
-# parsed = parse_command('greet @a Hello World')
+# or add it to a version to make it work everywhere
+from mcfunction import get_version, parse_command
+version = get_version()  # latest version
+version.add_command(greet)
+
+parsed = parse_command('greet @a Hello World')
 ```
 
 </p>
