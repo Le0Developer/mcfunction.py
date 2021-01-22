@@ -23,7 +23,7 @@ class ParsedWhitelistCommand(ParsedCommand):
         return base
 
 
-whitelist = Command('whitelist', parsed=ParsedWhitelistCommand)
+whitelist = Command('whitelist', parsed=ParsedWhitelistCommand, oplevel=3)
 
 # whitelist (add|remove) <targets>
 whitelist.add_variation(

@@ -18,7 +18,7 @@ class ParsedBanlistCommand(ParsedCommand):
         return f'{self.command} {self.mode}'
 
 
-banlist = Command('banlist', commandblock=False, parsed=ParsedBanlistCommand)
+banlist = Command('banlist', parsed=ParsedBanlistCommand, oplevel=3)
 
 # banlist [ips|players]
 #  - banlist (ips|players)

@@ -21,7 +21,7 @@ class ParsedKickCommand(ParsedCommand):
         return base
 
 
-kick = Command('kick', commandblock=False, parsed=ParsedKickCommand)
+kick = Command('kick', parsed=ParsedKickCommand, oplevel=3)
 
 # kick <targets> [<reason>]
 #  - kick <targets> <reason>

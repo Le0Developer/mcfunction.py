@@ -16,7 +16,7 @@ class ParsedOpCommand(ParsedCommand):
         return f'{self.command} {self.target}'
 
 
-op = Command('op', parsed=ParsedOpCommand, commandblock=False)
+op = Command('op', parsed=ParsedOpCommand, oplevel=3)
 
 # op <target>
 op.add_variation(

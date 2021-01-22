@@ -16,7 +16,7 @@ class ParsedMeCommand(ParsedCommand):
         return f'{self.command} {self.message}'
 
 
-me = Command('me', parsed=ParsedMeCommand)
+me = Command('me', parsed=ParsedMeCommand, oplevel=0)
 
 # me <message>
 me.add_variation(

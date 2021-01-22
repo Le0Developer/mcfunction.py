@@ -16,7 +16,7 @@ class ParsedDeopCommand(ParsedCommand):
         return f'{self.command} {self.target}'
 
 
-deop = Command('deop', parsed=ParsedDeopCommand, commandblock=False)
+deop = Command('deop', parsed=ParsedDeopCommand, oplevel=3)
 
 # deop <target>
 deop.add_variation(

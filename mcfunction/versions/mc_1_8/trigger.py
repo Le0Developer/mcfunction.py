@@ -24,7 +24,7 @@ class ParsedTriggerCommand(ParsedCommand):
         return base
 
 
-trigger = Command('trigger', parsed=ParsedTriggerCommand)
+trigger = Command('trigger', parsed=ParsedTriggerCommand, oplevel=0)
 
 # trigger <objective>
 trigger.add_variation(

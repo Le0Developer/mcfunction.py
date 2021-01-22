@@ -18,7 +18,7 @@ class ParsedHelpCommand(ParsedCommand):
         return self.command
 
 
-help = Command('help', parsed=ParsedHelpCommand)
+help = Command('help', parsed=ParsedHelpCommand, oplevel=0)
 
 # help
 help.add_variation()

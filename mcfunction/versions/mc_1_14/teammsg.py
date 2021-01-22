@@ -16,7 +16,8 @@ class ParsedTeammsgCommand(ParsedCommand):
         return f'{self.command} {self.message}'
 
 
-teammsg = Command('teammsg', aliases=['tm'], parsed=ParsedTeammsgCommand)
+teammsg = Command('teammsg', aliases=['tm'], parsed=ParsedTeammsgCommand,
+                  oplevel=0)
 
 # teammsg <message>
 teammsg.add_variation(
