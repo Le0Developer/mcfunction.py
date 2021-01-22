@@ -26,29 +26,73 @@ class NoCommand(ParsedCommand):
 class McFunction:
     commands: t.List[ParsedCommand]
 
-    def __str__(self):
-        return '\n'.join(str(cmd) for cmd in self.commands)
+    @classmethod
+    def _parse_line(cls, command: str, version: MinecraftVersion = None):
+        from .parser import parse_command  # circular import :/
+
+        if not command:  # empty line
+            return NoCommand('')
+        elif command.startswith('# '):
+            return NoCommand(
+                command='# ',
+                comment=RawNode(command[2:])
+            )
+        elif command.startswith('#'):
+            return NoCommand(
+                command='#',
+                comment=RawNode(command[1:])
+            )
+
+        return parse_command(command, version)
 
     @classmethod
     def parse(cls: t.Type[T], lines: t.List[str],
               version: MinecraftVersion = None) -> T:
-        from .parser import parse_command  # circular import :/
-
         commands = []
-        for command in (x.strip() for x in lines):
-            if not command:  # empty line
-                commands.append(NoCommand(''))
-            elif command.startswith('# '):
-                commands.append(NoCommand(
-                    command='# ',
-                    comment=RawNode(command[2:])
-                ))
-            elif command.startswith('#'):
-                commands.append(NoCommand(
-                    command='#',
-                    comment=RawNode(command[1:])
-                ))
-            else:
-                commands.append(parse_command(command, version))
+        for command in lines:
+            commands.append(cls._parse_line(command.strip(), version))
 
         return cls(commands)
+
+    @classmethod
+    def load(cls, fp: t.TextIO, version: MinecraftVersion = None):
+        commands = []
+        while True:
+            line = fp.readline()
+            if not line:
+                break
+            commands.append(cls._parse_line(line.strip(), version))
+
+        return cls(commands)
+
+    @classmethod
+    def loads(cls, string: str, version: MinecraftVersion = None):
+        commands = []
+        while True:
+            next = string.find('\n')
+            print(next, string)
+            line = string[:next if next >= 0 else None]
+            commands.append(cls._parse_line(line.strip(), version))
+            if next < 0:
+                break
+            string = string[next + 1:]
+
+        return cls(commands)
+
+    def dump(self, fp: t.TextIO):
+        for i, command in enumerate(self.commands):
+            fp.write(str(command))
+            if i != len(self.commands) - 1:
+                fp.write('\n')
+
+    def dumps(self):
+        return '\n'.join(str(cmd) for cmd in self.commands)
+
+    def __str__(self):
+        return self.dumps()
+
+
+load = McFunction.load
+loads = McFunction.loads
+dump = McFunction.dump
+dumps = McFunction.dumps
