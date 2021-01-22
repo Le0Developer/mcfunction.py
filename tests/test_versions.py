@@ -24,3 +24,13 @@ def test_older_deleted_command():
 
 def test_get_version():
     assert get_version() is VERSIONS[0]
+
+
+def test_oplevel():
+    command = version.get_command('ban')
+    assert command.oplevel == 3
+    assert not command.commandblock
+
+    command = version.get_command('help')
+    assert command.oplevel == 0
+    assert command.commandblock
