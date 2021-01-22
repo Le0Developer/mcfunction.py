@@ -73,15 +73,19 @@ class Command:
 
     def __init__(self, name: str, aliases: t.List[str] = None, *,
                  parsed: t.Callable[..., ParsedCommand],
-                 commandblock: bool = True):
+                 oplevel: int = 2):
         self.name = name
         if aliases is None:
             aliases = []
         self.aliases = aliases
         self.variations = []
 
-        self.commandblock = commandblock
+        self.oplevel = oplevel
         self.parsed = parsed
+
+    @property
+    def commandblock(self):
+        return self.oplevel <= 2
 
     def add_variation(self, *parsers: Parser):
         self.variations.append(parsers)
