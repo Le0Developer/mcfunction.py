@@ -70,7 +70,6 @@ class McFunction:
         commands = []
         while True:
             next = string.find('\n')
-            print(next, string)
             line = string[:next if next >= 0 else None]
             commands.append(cls._parse_line(line.strip(), version))
             if next < 0:
