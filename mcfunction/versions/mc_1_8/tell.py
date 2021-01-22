@@ -17,7 +17,8 @@ class ParsedTellCommand(ParsedCommand):
         return f'{self.command} {self.target} {self.message}'
 
 
-tell = Command('tell', aliases=['msg', 'w'], parsed=ParsedTellCommand)
+tell = Command('tell', aliases=['msg', 'w'], parsed=ParsedTellCommand,
+               oplevel=0)
 
 # tell <target> <message>
 tell.add_variation(

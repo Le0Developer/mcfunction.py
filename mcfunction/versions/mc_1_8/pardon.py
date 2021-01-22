@@ -16,7 +16,7 @@ class ParsedPardonCommand(ParsedCommand):
         return f'{self.command} {self.target}'
 
 
-pardon = Command('pardon', parsed=ParsedPardonCommand, commandblock=False)
+pardon = Command('pardon', parsed=ParsedPardonCommand, oplevel=3)
 
 # pardon <target>
 pardon.add_variation(

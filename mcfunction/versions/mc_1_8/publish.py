@@ -12,7 +12,7 @@ class ParsedPublishCommand(ParsedCommand):
         return self.command
 
 
-publish = Command('publish', commandblock=False, parsed=ParsedPublishCommand)
+publish = Command('publish', parsed=ParsedPublishCommand, oplevel=4)
 
 # publish
 publish.add_variation()

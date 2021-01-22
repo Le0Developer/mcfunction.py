@@ -12,7 +12,7 @@ class ParsedStopCommand(ParsedCommand):
         return self.command
 
 
-stop = Command('stop', commandblock=False, parsed=ParsedStopCommand)
+stop = Command('stop', parsed=ParsedStopCommand, oplevel=4)
 
 # stop
 stop.add_variation()

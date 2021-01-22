@@ -16,7 +16,8 @@ class ParsedSetidletimeoutCommand(ParsedCommand):
         return f'{self.command} {self.minutes}'
 
 
-setidletimeout = Command('setidletimeout', parsed=ParsedSetidletimeoutCommand)
+setidletimeout = Command('setidletimeout', parsed=ParsedSetidletimeoutCommand,
+                         oplevel=3)
 
 # setidletimeout <minutes>
 setidletimeout.add_variation(

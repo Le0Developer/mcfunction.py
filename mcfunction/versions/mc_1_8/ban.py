@@ -21,7 +21,7 @@ class ParsedBanCommand(ParsedCommand):
         return base
 
 
-ban = Command('ban', commandblock=False, parsed=ParsedBanCommand)
+ban = Command('ban', parsed=ParsedBanCommand, oplevel=3)
 
 # ban <targets> [<reason>]
 #  - ban <targets> <reason>

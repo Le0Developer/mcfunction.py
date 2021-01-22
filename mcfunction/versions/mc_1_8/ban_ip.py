@@ -22,7 +22,7 @@ class ParsedIPBanCommand(ParsedCommand):
         return base
 
 
-ban_ip = Command('ban-ip', commandblock=False, parsed=ParsedIPBanCommand)
+ban_ip = Command('ban-ip', parsed=ParsedIPBanCommand, oplevel=3)
 
 # target referring to an ip address
 

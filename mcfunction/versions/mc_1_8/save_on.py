@@ -12,7 +12,7 @@ class ParsedSaveOnCommand(ParsedCommand):
         return self.command
 
 
-save_on = Command('save-on', commandblock=False, parsed=ParsedSaveOnCommand)
+save_on = Command('save-on', parsed=ParsedSaveOnCommand, oplevel=3)
 
 # save-on
 save_on.add_variation()

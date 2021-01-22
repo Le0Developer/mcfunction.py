@@ -16,7 +16,7 @@ class ParsedDebugCommand(ParsedCommand):
         return f'{self.command} {self.action}'
 
 
-debug = Command('debug', commandblock=False, parsed=ParsedDebugCommand)
+debug = Command('debug', parsed=ParsedDebugCommand, oplevel=3)
 
 # debug start
 # debug stop

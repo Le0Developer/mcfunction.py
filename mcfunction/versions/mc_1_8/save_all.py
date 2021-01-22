@@ -18,7 +18,7 @@ class ParsedSaveAllCommand(ParsedCommand):
         return self.command
 
 
-save_all = Command('save-all', commandblock=False, parsed=ParsedSaveAllCommand)
+save_all = Command('save-all', parsed=ParsedSaveAllCommand, oplevel=4)
 
 # save-all
 save_all.add_variation()
