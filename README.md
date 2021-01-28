@@ -3,7 +3,22 @@
 
 Command parser and reconstructor for minecraft commands in pure python (requires python3.7+).
 
-This is currently version **[Minecraft 1.16 only](<#versions>)**.
+This project currently supports [minecraft 1.8 - 1.17](<#versions>)
+
+
+## Installing
+
+mcfunction.py is currently *not* on PyPi, but you can use the commad below
+
+```sh
+pip install git+https://git@github.com/Le0Developer/mcfunction.py.git
+```
+
+If you need a specific version, use `@`
+
+```sh
+pip install git+https://git@github.com/Le0Developer/mcfunction.py.git@v0.3.1
+```
 
 
 ## Parsing & Reconstructing
