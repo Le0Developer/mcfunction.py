@@ -3,7 +3,7 @@
 
 Command parser and reconstructor for minecraft commands in pure python (requires python3.7+).
 
-This project currently supports [minecraft 1.8 - 1.17](<#versions>)
+This project currently supports [minecraft 1.8 - 1.16](<#versions>)
 
 
 ## Installing
