@@ -68,6 +68,7 @@ for target_type, target in TYPES:
             Parser(Any(), 'slot'),
             Parser(Literal('copy'), 'action'),
             Parser(Literal(source_type), 'source_type'),
+            Parser(source, 'source'),
             Parser(Any(), 'source_slot'),
             Parser(Any(), 'modifier')
         )
@@ -78,6 +79,7 @@ for target_type, target in TYPES:
             Parser(Any(), 'slot'),
             Parser(Literal('copy'), 'action'),
             Parser(Literal(source_type), 'source_type'),
+            Parser(source, 'source'),
             Parser(Any(), 'source_slot')
         )
     # item <TARGET> <slot> modify <modifier>
