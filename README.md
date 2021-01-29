@@ -3,7 +3,7 @@
 
 Command parser and reconstructor for minecraft commands in pure python (requires python3.7+).
 
-This project currently supports [minecraft 1.8 - 1.16](<#versions>)
+For version compatibility, read [versions](<#versions>).
 
 
 ## Installing
@@ -176,7 +176,7 @@ mcfunction.commands[2].command = '# '
 
 ## Versions
 
-This library currently supports **1.8 - 1.16**.
+This library currently supports **1.8 - 1.17**.
 
 When using a parse function (`parse_command` and `parse_mcfunction`) you can
 specfiy which version's syntax you want (defaults to the latest version).
