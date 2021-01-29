@@ -324,6 +324,8 @@ def test_particle():
         'minecraft:block', 'test:block',
         'minecraft:falling_dust', 'test:block',
         'minecraft:item', 'test:item',
+        'minecraft:vibration', '0', '0', '0', '1', '1', '1', '2',
+        'minecraft:dust_color_transition', '0', '1', '2', '3', '4', '5', '6',
         'invalid particle',
         'minecraft:dust'
     ))
@@ -357,6 +359,18 @@ def test_particle():
     assert node.namespace == 'minecraft'
     assert node.name == 'item'
     assert isinstance(node.arguments[0], nodes.NamespaceIDNode)
+
+    node = particle.parse(parts)
+    assert node.namespace == 'minecraft'
+    assert node.name == 'vibration'
+    assert isinstance(node.arguments[0], nodes.PositionNode)
+    assert isinstance(node.arguments[1], nodes.PositionNode)
+    assert isinstance(node.arguments[2], nodes.IntegerNode)
+
+    node = particle.parse(parts)
+    assert node.namespace == 'minecraft'
+    assert node.name == 'dust_color_transition'
+    assert [x.value for x in node.arguments] == [0, 1, 2, 3, 4, 5, 6]
 
     with pytest.raises(ParserException,
                        match='expected valid particle, not .*'):
