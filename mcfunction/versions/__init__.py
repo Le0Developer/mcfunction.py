@@ -131,6 +131,8 @@ class Command:
 
 
 VERSIONS = [
+    MinecraftVersion('1.17', 'mcfunction.versions.mc_1_17',
+                     removed_commands={'replaceitem'}),
     MinecraftVersion('1.16', 'mcfunction.versions.mc_1_16'),
     MinecraftVersion('1.15', 'mcfunction.versions.mc_1_15'),
     MinecraftVersion('1.14', 'mcfunction.versions.mc_1_14'),

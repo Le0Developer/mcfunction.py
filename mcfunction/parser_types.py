@@ -251,6 +251,14 @@ class Particle(ParserType):
                 match = NamespaceID.namespace.fullmatch(get(parts))
                 arguments = (nodes.NamespaceIDNode(*match.groups()),)
 
+            elif name == 'vibration':
+                arguments = (Position().parse(parts), Position().parse(parts),
+                             Integer().parse(parts))
+
+            elif name == 'dust_color_transition':
+                arguments = tuple(nodes.DoubleNode(float(x))
+                                  for x in get(parts, 7))
+
         return nodes.ParticleNode(namespace, name, arguments)
 
 
