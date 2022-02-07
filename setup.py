@@ -34,11 +34,11 @@ setup(
     keywords='mcfunction parser',
     name='mcfunction.py',
     packages=find_packages(include=['mcfunction', 'mcfunction.*']),
-    tests_require=['pytest>=6.2,<7'],
+    tests_require=['pytest>=6.2,<8'],
     url='https://github.com/le0developer/mcfunction',
     version=version,
     zip_safe=False,
     extras_require={
-        'tests': ['pytest>=6.2,<7']
+        'tests': ['pytest>=6.2,<8']
     }
 )
